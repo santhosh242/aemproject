@@ -1,0 +1,10 @@
+<div data-sly-use.titles="com.adobe.aem.guides.wknd.core.models.Title">
+    <h2>Title</h2>
+    <div>${titles.titleone}</div>
+    <div>${titles.titletwo}</div>
+</div>
+
+<dl data-sly-list.child="${currentPage.listChildren}">
+    <dt>index: ${childList.index}</dt>
+    <dd>value: ${child.title}</dd>
+</dl>

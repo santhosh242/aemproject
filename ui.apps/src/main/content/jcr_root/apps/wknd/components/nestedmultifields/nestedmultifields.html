@@ -1,0 +1,18 @@
+<h1>Nested Multifield</h1>
+<div data-sly-use.books="com.adobe.aem.guides.wknd.core.models.AuthorBooks">
+
+    <div data-sly-list="${books.bookDetailsWithNastedMultifield}">
+        <p> Link Text : <b>${item.bookName} </b></p>
+        <p> Link Url : <b>${item.bookSubject} </b></p>
+        <div data-sly-list.editon="${item.bookEditons}">
+        	<p> Link Text : <b>${editon.editonDate} </b></p>
+            <p> Link Url : <b>${editon.bookEditon} </b></p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+

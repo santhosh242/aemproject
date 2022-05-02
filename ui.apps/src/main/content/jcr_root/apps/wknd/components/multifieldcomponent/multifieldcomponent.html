@@ -1,0 +1,10 @@
+<h1>Multifield</h1>
+<div data-sly-use.author="${'com.adobe.aem.guides.wknd.core.models.Author'}"></div>
+    <div>First Name :  <b>${author.fname}</b> </div>
+    <div>Lasr Name :  <b>${author.lname}</b>   </div>
+    <div data-sly-list.item="${author.bookDetailsWithMap}">
+        <p> Description : <b>${item.bookname} </b></p>
+        <p> Description : <b>${item.booksubject}</b> </p>
+        <p> Description : <b>${item.publishyear}</b> </p>
+    </div>
+

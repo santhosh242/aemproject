@@ -1,0 +1,14 @@
+<div data-sly-use.multi="com.adobe.aem.guides.wknd.core.models.WCMUseAPIDemo"></div>
+
+Renderining using wcmusepojo :: ${multi.currentNodeProperty}
+
+<sly data-sly-list.key="${multi.currentResourceProperties}"><br>
+	KEY::${key} -- VALUE::${multi.currentResourceProperties[key]}
+</sly>
+
+
+<br> Other component property:: ${multi.otherResourceProperty}
+
+<br> Current Page Title :: ${multi.currentPageTitle}
+
+<br> Different Page Title :: ${multi.differentPageTitle}
